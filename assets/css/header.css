@@ -1,0 +1,30 @@
+.header {
+    display: grid;
+    grid-template-areas: 
+        "image title"
+        "image text";
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    padding: 1rem;
+    gro
+}
+
+.header__profile {
+    grid-area: image;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+
+.header__title {
+    grid-area: title;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--font-color);
+    align-self: center;
+}
+
+.header__text {
+    grid-area: text;
+    color: var(--gray);
+}
